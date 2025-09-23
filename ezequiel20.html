@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezequiel 20</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ezequiel 20</h2>
+            <h3>O Julgamento e a Promessa de Restauração de Israel</h3> 
+            <p>1 E veio a mim a palavra do Senhor, no sétimo ano, no quinto mês, ao décimo dia do mês, dizendo:</p>
+            <p>2 Filho do homem, fala aos anciãos de Israel e dize-lhes: Assim diz o Senhor Deus: Porventura viestes consultar-me? Eu porventura me deixarei consultar por vós? </p>
+            <p>3 Pelo contrário, vive eu, diz o Senhor Deus, que não me deixarei consultar por vós.</p>
+            <p>4 Acaso é pouco para vós o dia em que vos rebelastes contra o Senhor, e me levantastes a vós mesmos em revolta? </p>
+            <p>5 E dizeis: Não é tempo de fazer planos, mas eis que o dia se aproxima, o dia do furor está perto; então cada um de nós contará com os seus próprios caminhos, e procurará o nosso próprio interesse.</p>
+            <p>6 Portanto, dize-lhes: Assim diz o Senhor Deus: Vivo eu, que com grande furor e com indignação ardente, no dia em que me consultardes, não me deixarei consultar por vós.</p>
+            <p>7 E farei com que no meio de vós passe a espada; e saberão que eu sou o Senhor.</p>
+            <p>8 E vos congregarei dentre os povos, e vos ajuntarei das terras para onde fostes espalhados, e serei santificado no meio de vós aos olhos das nações.</p>
+            <p>9 E vos levarei à terra de Israel, à terra que levantei a minha mão para dar a vossos pais; e lá vos darei a terra, e lá entrareis, e a possuireis.</p>
+            <p>10 E vos farei entrar nas vossas cidades, e vos darei os campos, e comereis o seu fruto e o seu bem.</p>
+            <p>11 E vos darei um coração novo, e porei um espírito novo dentro de vós; e tirarei o coração de pedra da vossa carne, e vos darei um coração de carne.</p>
+            <p>12 E porei dentro de vós o meu Espírito, e farei que andeis nos meus estatutos, e guardareis os meus juízos, e os observeis.</p>
+            <p>13 E habitareis na terra que dei a vossos pais; e sereis o meu povo, e eu serei o vosso Deus.</p>
+            <p>14 Mas, quanto ao que diz respeito àqueles cujos corações se desviaram, e que se afastaram da minha ordenança, e que não andaram nos meus juízos, os quais não guardaram os meus estatutos, estes também visitarei com a sua iniquidade, diz o Senhor Deus.</p>
+            <p>15 E farei com que no meio de vós passe a espada; e sabereis que eu sou o Senhor.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ezequiel19.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ezequiel21.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
